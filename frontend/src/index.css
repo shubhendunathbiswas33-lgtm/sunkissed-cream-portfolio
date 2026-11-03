@@ -1,0 +1,256 @@
+:root {
+  --bg-color: #0b0b0c;
+  --header-bg: #141416;
+  --border-color: #242428;
+  --accent-color: #0057ff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: var(--bg-color);
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Behance Top Platform Navigation */
+.behance-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: var(--header-bg);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.8rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.behance-left-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid #fff;
+}
+
+.user-details h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.user-details p {
+  font-size: 0.78rem;
+  color: #92929d;
+}
+
+.project-title-center {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #e2e2e8;
+  letter-spacing: 0.5px;
+}
+
+.behance-right-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.action-btn {
+  background: #232328;
+  color: #fff;
+  border: 1px solid #36363e;
+  padding: 0.45rem 1rem;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s;
+}
+
+.action-btn:hover {
+  background: #31313a;
+}
+
+.action-btn-primary {
+  background: #0057ff;
+  border-color: #0057ff;
+}
+
+.action-btn-primary:hover {
+  background: #0046d4;
+}
+
+/* Behance Continuous Image Feed (Pure natural stacked images) */
+.behance-project-flow {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 0 20px 0;
+  background: var(--bg-color);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.9);
+}
+
+.image-plate-wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+  line-height: 0;
+  background: transparent;
+}
+
+.image-plate {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+  object-fit: contain;
+  /* 100% static, natural aspect ratio, no transform, no animation */
+}
+
+/* Creator Profile Card in Flow */
+.creator-profile-section {
+  background: #141416;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  padding: 4.5rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.creator-profile-inner {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+  max-width: 900px;
+  width: 100%;
+}
+
+.creator-big-photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #333;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  flex-shrink: 0;
+}
+
+.creator-bio-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.creator-badge {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #ff3b30;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.creator-bio-content h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.creator-bio-content p {
+  font-size: 1.05rem;
+  color: #a0a0a5;
+  line-height: 1.6;
+}
+
+/* Footer / Project End */
+.behance-footer {
+  background: #141416;
+  border-top: 1px solid var(--border-color);
+  padding: 5rem 2rem 3rem;
+  text-align: center;
+}
+
+.appreciate-box {
+  background: #1e1e22;
+  border: 1px solid #2d2d34;
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  max-width: 650px;
+  margin: 0 auto 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.appreciate-main-btn {
+  background: #0057ff;
+  color: #fff;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.appreciate-main-btn:hover {
+  background: #0046d4;
+  transform: scale(1.03);
+}
+
+.project-credits {
+  color: #777;
+  font-size: 0.85rem;
+  line-height: 1.8;
+}
+
+.project-credits strong {
+  color: #bbb;
+}
+
+@media (max-width: 768px) {
+  .creator-profile-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  .creator-big-photo {
+    width: 160px;
+    height: 160px;
+  }
+  .project-title-center {
+    display: none;
+  }
+  .behance-topbar {
+    padding: 0.7rem 1rem;
+  }
+}
